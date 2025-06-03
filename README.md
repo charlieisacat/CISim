@@ -1,3 +1,9 @@
+# This is the simulator we used for in our work CIExplorer: Microarchitecture-Aware Exploration for Tightly Integrated Custom InstructionCIExplorer (ICS'25)
+
+## Citation
+> Xiaoyu Hao, Sen Zhang, Liang Qiao, Qingcai Jiang, Jun Shi, Junshi Chen, Hong An, Xulong Tang, Hao Shu, and Honghui Yuan. 
+> CIExplorer: Microarchitecture-Aware Exploration for Tightly Integrated Custom Instruction. In 2025 International Conference on Supercomputing (ICS ’25)
+
 # Requirements & Setup
 - LLVM-14
 - YAML
