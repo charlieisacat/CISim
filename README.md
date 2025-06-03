@@ -1,4 +1,10 @@
-# This is the simulator we used for in our work CIExplorer: Microarchitecture-Aware Exploration for Tightly Integrated Custom InstructionCIExplorer (ICS'25)
+# CIExplorer: Microarchitecture-Aware Exploration for Tightly Integrated Custom InstructionCIExplorer (ICS'25)
+
+This is the simulator we used in CIExplorer https://github.com/charlieisacat/CIExplorer.
+
+Its DRAM and Cache model are implemented according to https://github.com/PrincetonUniversity/MosaicSim.
+
+Simulator's paper is not published yet. If you use the code, we would appreciate it if you cite the following paper:
 
 ## Citation
 > Xiaoyu Hao, Sen Zhang, Liang Qiao, Qingcai Jiang, Jun Shi, Junshi Chen, Hong An, Xulong Tang, Hao Shu, and Honghui Yuan. 
