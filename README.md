@@ -1,4 +1,4 @@
-# CIExplorer: Microarchitecture-Aware Exploration for Tightly Integrated Custom InstructionCIExplorer (ICS'25)
+# CISim: a simulator for custom instruction taking LLVM IR as ISA
 
 This is the simulator we used in CIExplorer https://github.com/charlieisacat/CIExplorer.
 
