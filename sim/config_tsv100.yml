@@ -1,0 +1,229 @@
+CPU:
+  window_size: 4
+  retire_size: 4
+DRAM:
+  simple: true
+ports:
+  port0:
+    fu0: INTALU
+  port1:
+    fu0: INTALU
+    fu1: BRU
+  port2:
+    fu0: INTALU
+    fu1: BRU
+  port3:
+    fu0: MDU
+  port4:
+    fu0: FP
+  port5:
+    fu0: FP
+  port6:
+    fu0: LSU
+  port7:
+    fu0: LSU
+instructions:
+  ret:
+    ports: "12"
+    opcode_num: 1
+    runtime_cycles: 1
+  br:
+    ports: "12"
+    opcode_num: 2
+    runtime_cycles: 1
+  switch:
+    ports:  "12"
+    opcode_num: 3
+    runtime_cycles: 1
+  indirectbr:
+    ports: "12"
+    opcode_num: 4
+    runtime_cycles: 1
+  # invoke:
+  #   ports: "12"
+  #   opcode_num: 5
+  #   runtime_cycles: 1
+  # resume:
+  #   ports: "12"
+  #   opcode_num: 6
+  #   runtime_cycles: 1
+  unreachable:
+    ports: "12"
+    opcode_num: 7
+    runtime_cycles: 0
+  fneg:
+    ports: "45"
+    opcode_num: 12
+    runtime_cycles: 2
+  add:
+    ports: "012"
+    opcode_num: 13 
+    runtime_cycles: 1
+  fadd:
+    ports: "45"
+    opcode_num: 14 
+    runtime_cycles: 4
+  sub:
+    ports: "012"
+    opcode_num: 15
+    runtime_cycles: 1
+  fsub:
+    ports: "45"
+    opcode_num: 16
+    runtime_cycles: 5
+  mul:
+    ports: "3"
+    opcode_num: 17
+    runtime_cycles: 4
+  fmul:
+    ports: "45"
+    opcode_num: 18
+    runtime_cycles: 5
+  udiv:
+    ports: "3"
+    opcode_num: 19
+    runtime_cycles: 6
+  sdiv:
+    ports: "3"
+    opcode_num: 20
+    runtime_cycles: 6
+  fdiv:
+    ports: "45"
+    opcode_num: 21
+    runtime_cycles: 6
+  urem:
+    ports: "3"
+    opcode_num: 22
+    runtime_cycles: 6
+  srem:
+    ports: "3"
+    opcode_num: 23
+    runtime_cycles: 6
+  frem:
+    ports: "45"
+    opcode_num: 24
+    runtime_cycles: 6
+  shl:
+    ports: "012"
+    opcode_num: 25
+    runtime_cycles: 1
+  lshr:
+    ports: "012"
+    opcode_num: 26
+    runtime_cycles: 1
+  ashr:
+    ports: "012"
+    opcode_num: 27
+    runtime_cycles: 1
+  and:
+    ports: "012"
+    opcode_num: 28
+    runtime_cycles: 1
+  or:
+    ports: "012"
+    opcode_num: 29
+    runtime_cycles: 1
+  xor:
+    ports: "012"
+    opcode_num: 30
+    runtime_cycles: 1
+  alloca:
+    ports: "012"
+    opcode_num: 31
+    runtime_cycles: 1
+  load:
+    ports: "67"
+    opcode_num: 32
+    runtime_cycles: 1
+  store:
+    ports: "67"
+    opcode_num: 33
+    runtime_cycles: 1
+  getelementptr: # use add? 
+    ports: "012"
+    opcode_num: 34
+    runtime_cycles: 1
+  # fence:
+  #   ports: "012"
+  #   opcode_num: 35
+  #   runtime_cycles: 0
+  trunc:
+    ports: "012"
+    opcode_num: 38
+    runtime_cycles: 1
+  zext:
+    ports: "012"
+    opcode_num: 39
+    runtime_cycles: 1
+  sext:
+    ports: "012"
+    opcode_num: 40
+    runtime_cycles: 1
+  fptoui:
+    ports: "45"
+    opcode_num: 41
+    runtime_cycles: 2
+  fptosi:
+    ports: "45"
+    opcode_num: 42
+    runtime_cycles: 2
+  uitofp:
+    ports: "45"
+    opcode_num: 43
+    runtime_cycles: 3
+  sitofp:
+    ports: "45"
+    opcode_num: 44
+    runtime_cycles: 3
+  fptrunc:
+    ports: "4"
+    opcode_num: 45
+    runtime_cycles: 2
+  fpext:
+    ports: "4"
+    opcode_num: 46
+    runtime_cycles: 2
+  ptrtoint: #like mov
+    ports: "012"
+    opcode_num: 47
+    runtime_cycles: 1
+  inttoptr:
+    ports: "012"
+    opcode_num: 48
+    runtime_cycles: 1
+  bitcast: # fmov?
+    ports: "45"
+    opcode_num: 49
+    runtime_cycles: 1
+  addrspacecast:
+    ports: "012"
+    opcode_num: 50
+    runtime_cycles: 1
+  icmp:
+    ports: "12"
+    opcode_num: 53
+    runtime_cycles: 1
+  fcmp:
+    ports: "45"
+    opcode_num: 54
+    runtime_cycles: 1
+  phi: #treat it as mov
+    ports: "012"
+    opcode_num: 55
+    runtime_cycles: 1
+  call:
+    ports: "12"
+    opcode_num: 56
+    runtime_cycles: 1
+  select: # cmp and mov? mov will be eliminated
+    ports: "12"
+    opcode_num: 57
+    runtime_cycles: 1
+  # vaarg:
+  #   ports: INTALU
+  #   opcode_num: 60
+  #   runtime_cycles: 0
+  # landingpad:
+  #   functional_unit: 0
+  #   opcode_num: 66
+  #   runtime_cycles: 0

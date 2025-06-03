@@ -1,0 +1,16 @@
+.vscode
+data
+ispass_test
+rubbish
+temp_results
+*rubbish
+icsexample
+auto*
+test_spec/
+test_*
+ics_*
+benchmark/
+cg_offloader
+needle
+shell_backup
+run
