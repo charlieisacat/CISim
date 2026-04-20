@@ -65,4 +65,4 @@ An example.txt will be generated. To run the simulator:
 To run custom instructions, please refer to https://github.com/charlieisacat/CIExplorer
 
 ## Note
-This is an early version of our implementation, which does not fully correspond to the implementation described in the paper ```CISim: ISA-Agnostic Custom Instruction Simulation for General-Purpose Processor```. We will release the correct version of the code as soon as possible.
+This is an early version of our implementation, which does not fully correspond to the implementation described in the paper ```CISim: ISA-Agnostic Custom Instruction Simulation for General-Purpose Processor``` and has some issues. We will release the correct version of the code as soon as possible.
