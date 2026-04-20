@@ -2,10 +2,6 @@
 
 Its DRAM and Cache model are implemented according to https://github.com/PrincetonUniversity/MosaicSim.
 
-## Citation
-> Xiaoyu Hao, Sen Zhang, Liang Qiao, Qingcai Jiang, Jun Shi, Junshi Chen, and Hong An. 
-> CISim: ISA-Agnostic Custom Instruction Simulation for General-Purpose Processor. In 2026 Design, Automation and Test in Europe Conference (DATE ’26)
-
 # Requirements & Setup
 - LLVM-14
 - YAML
@@ -60,12 +56,13 @@ make
 ./aes_run
 ```
 
-A example.txt will be generated. To run the simulator:
+An example.txt will be generated. To run the simulator:
 
 ```bash
 /path/to/simulator/sim/build/CISim aes_run_rn.bc example.txt /path/to/simulator/sim/ino.yml None None None None 0 0
 ```
 
-To run custom instructions please refer to https://github.com/charlieisacat/CIExplorer
+To run custom instructions, please refer to https://github.com/charlieisacat/CIExplorer
 
-
+## Note
+This is an early version of our implementation, which does not fully correspond to the implementation described in the paper ```CISim: ISA-Agnostic Custom Instruction Simulation for General-Purpose Processor```. We will release the correct version of the code as soon as possible.
