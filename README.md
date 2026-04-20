@@ -1,14 +1,12 @@
-# CISim: a simulator for custom instruction taking LLVM IR as ISA
+# CISim: ISA-Agnostic Custom Instruction Simulation for General-Purpose Processor
 
 This is the simulator we used in CIExplorer https://github.com/charlieisacat/CIExplorer.
 
 Its DRAM and Cache model are implemented according to https://github.com/PrincetonUniversity/MosaicSim.
 
-Simulator's paper is not published yet. If you use the code, we would appreciate it if you cite the following paper:
-
 ## Citation
-> Xiaoyu Hao, Sen Zhang, Liang Qiao, Qingcai Jiang, Jun Shi, Junshi Chen, Hong An, Xulong Tang, Hao Shu, and Honghui Yuan. 
-> CIExplorer: Microarchitecture-Aware Exploration for Tightly Integrated Custom Instruction. In 2025 International Conference on Supercomputing (ICS ’25)
+> Xiaoyu Hao, Sen Zhang, Liang Qiao, Qingcai Jiang, Jun Shi, Junshi Chen, and Hong An. 
+> CISim: ISA-Agnostic Custom Instruction Simulation for General-Purpose Processor. In 2026 Design, Automation and Test in Europe Conference (DATE ’26)
 
 # Requirements & Setup
 - LLVM-14
